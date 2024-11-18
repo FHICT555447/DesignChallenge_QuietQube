@@ -232,7 +232,8 @@ class _MyHomePageState extends State<MyHomePage> {
       Noise noise = await fetchNoise(
           'http://192.168.156.10:4321/api/hourly-noise-data/class-1?hours=24');
       setState(() {
-        _hourlyNoiseDataSpots = noise.decibels
+        List<double> reversedDecibels = noise.decibels.reversed.toList();
+        _hourlyNoiseDataSpots = reversedDecibels
             .asMap()
             .entries
             .map((entry) => FlSpot(
