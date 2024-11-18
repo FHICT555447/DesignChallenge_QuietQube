@@ -274,27 +274,28 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                Positioned(
-                  top: 40.0,
-                  right: 16.0,
-                  child: FloatingActionButton(
-                    onPressed: () {
-                      print(context);
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) {
-                          return LoginPage(
-                            title: "Login Page",
-                          );
-                        }),
-                      );
-                      print(context);
-                    },
-                    tooltip: 'Increment',
-                    mini: false, // Use mini to make the button smaller
-                    child: const Icon(Icons.account_box_rounded),
-                  ),
-                ),
+                // Positioned(
+                //   top: 40.0,
+                //   right: 16.0,
+                //   child: FloatingActionButton(
+                //     heroTag: 'loginButton', // Add this line
+                //     onPressed: () {
+                //       print(context);
+                //       Navigator.push(
+                //         context,
+                //         MaterialPageRoute(builder: (context) {
+                //           return LoginPage(
+                //             title: "Login Page",
+                //           );
+                //         }),
+                //       );
+                //       print(context);
+                //     },
+                //     tooltip: 'Login',
+                //     mini: false, // Use mini to make the button smaller
+                //     child: const Icon(Icons.account_box_rounded),
+                //   ),
+                // ),
               ],
             ),
           ),

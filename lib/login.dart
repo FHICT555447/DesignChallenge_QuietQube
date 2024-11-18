@@ -10,7 +10,8 @@ class LoginPage extends StatelessWidget {
         title: Text(title),
       ),
       body: Center(
-        child: TextButton(
+        child: FloatingActionButton(
+          heroTag: 'loginButton',
           onPressed: () {},
           child: const Text('Go Back'),
         ),
